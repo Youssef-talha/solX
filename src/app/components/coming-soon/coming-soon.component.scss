@@ -1,0 +1,193 @@
+* {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("./../../../assets/images/9791314.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline: 15px;
+    padding-block: 5px 0;
+
+    img {
+      border-radius: 15px;
+      width: 60px;
+      height: 55px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    height: calc(100vh - 120px);
+    justify-content: center;
+
+    .coming-soon {
+      font-size: 70px;
+      font-weight: 700;
+      font-family: 'conthrax-sb', sans-serif;
+    }
+
+    .timer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      > span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .days, .hours, .minutes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-family: 'conthrax-sb', sans-serif;
+      }
+
+      .days span:first-child, .hours span:first-child, .minutes span:first-child {
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        font-family: 'conthrax-sb', sans-serif;
+      }
+
+      .days span:last-child, .hours span:last-child, .minutes span:last-child {
+        font-weight: 600;
+        font-size: 14px;
+        color: #ddd;
+        opacity: .8;
+        font-family: 'conthrax-sb', sans-serif;
+      }
+    }
+
+    .emailing {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .description {
+        font-size: 18px;
+        font-family: 'DM Sans', sans-serif;
+      }
+
+      .form {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        input {
+          height: 40px;
+          border-radius: 11px;
+          padding: 0 10px;
+          width: 300px;
+          font-family: 'DM Sans', sans-serif;
+          border: 2px solid #ddd;
+          outline: none;
+          background: transparent;
+          box-shadow: none;
+        }
+
+        input::placeholder {
+          color: #ddd;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 14px;
+        }
+
+        button {
+          color: #000;
+          font-size: 15px;
+          border-radius: 11px;
+          font-family: 'DM Sans', sans-serif;
+          height: 42px;
+          border: none;
+          background: #5040fa;
+          cursor: pointer;
+          padding-inline: 20px;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .contact-email {
+      display: flex;
+      gap: 12px;
+      font-family: 'DM Sans', sans-serif;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .connect-platforms {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+
+      .platform {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-bottom: 1px solid #ddd;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        border-right: 1px solid #ddd;
+        border-radius: 10px 5px 10px 5px;
+        padding: 15px 20px;
+
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .platform:hover {
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,164,255,1) 0%, rgba(9,9,121,1) 84%);
+        //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 50%);
+        transition: ease-in-out .2s;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-width: 2px;
+  background: red;
+  border-style: solid;
+  border-color: black;
+  clip-path: polygon(0% 0%, 0% 0%, 18% 100%, 0% 38%);
+}
