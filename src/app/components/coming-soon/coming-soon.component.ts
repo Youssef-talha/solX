@@ -15,7 +15,7 @@ export class ComingSoonComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    const targetDate: Date = new Date('2024-12-31T00:00:00');
+    const targetDate: Date = new Date('2024-04-06T00:00:00');
 
     setInterval(() => {
       const now = new Date();
