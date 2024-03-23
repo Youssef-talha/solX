@@ -21,8 +21,7 @@
 
     img {
       border-radius: 15px;
-      width: 60px;
-      height: 55px;
+      height: 79px;
     }
   }
 
@@ -46,13 +45,15 @@
       justify-content: center;
       gap: 15px;
 
-      > span {
+      >span {
         font-size: 15px;
         font-weight: 700;
         color: #fff;
       }
 
-      .days, .hours, .minutes {
+      .days,
+      .hours,
+      .minutes {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,14 +64,18 @@
         font-family: 'conthrax-sb', sans-serif;
       }
 
-      .days span:first-child, .hours span:first-child, .minutes span:first-child {
+      .days span:first-child,
+      .hours span:first-child,
+      .minutes span:first-child {
         font-weight: 700;
         font-size: 14px;
         color: #fff;
         font-family: 'conthrax-sb', sans-serif;
       }
 
-      .days span:last-child, .hours span:last-child, .minutes span:last-child {
+      .days span:last-child,
+      .hours span:last-child,
+      .minutes span:last-child {
         font-weight: 600;
         font-size: 14px;
         color: #ddd;
@@ -165,7 +170,7 @@
 
       .platform:hover {
         cursor: pointer;
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,164,255,1) 0%, rgba(9,9,121,1) 84%);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 164, 255, 1) 0%, rgba(9, 9, 121, 1) 84%);
         //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 50%);
         transition: ease-in-out .2s;
       }
