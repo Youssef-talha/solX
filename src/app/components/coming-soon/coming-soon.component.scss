@@ -150,6 +150,7 @@
       align-items: center;
       justify-content: space-between;
 
+      
       .platform {
         display: flex;
         align-items: center;
@@ -171,7 +172,7 @@
 
       .platform:hover {
         cursor: pointer;
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 164, 255, 1) 0%, rgba(9, 9, 121, 1) 84%);
+        background: #5040FA;
         //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 50%);
         transition: ease-in-out .2s;
       }
